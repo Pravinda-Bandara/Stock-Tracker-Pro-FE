@@ -8,7 +8,7 @@ interface Props {
 const DetailsPortfolio = ({ portfolioValue }: Props) => {
   return (
     <Link to={`/company/${portfolioValue}/company-profile`}>
-      <button className="px-4 py-2 font-semibold text-white bg-blue-500 border border-blue-500 rounded-lg hover:bg-white hover:text-blue-500 hover:border-blue-500">
+      <button className="px-4 py-2 font-semibold text-white bg-green-500 border border-green-500 rounded-lg hover:bg-white hover:text-green-500 hover:border-green-500">
         Details
       </button>
     </Link>

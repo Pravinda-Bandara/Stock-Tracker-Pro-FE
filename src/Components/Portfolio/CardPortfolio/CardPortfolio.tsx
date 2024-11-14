@@ -10,8 +10,8 @@ interface Props {
 
 const CardPortfolio = ({ portfolioValue, onPortfolioDelete }: Props) => {
   return (
-    <div className="flex flex-col w-full p-8 space-y-4 text-center rounded-lg shadow-lg md:w-1/3">
-      <div className="pt-6 text-xl font-bold">
+    <div className="flex flex-col items-center p-6 space-y-4 text-center bg-white rounded-lg shadow-md">
+      <div className="text-2xl font-semibold text-gray-800">
         {portfolioValue.symbol}
       </div>
       <DetailsPortfolio portfolioValue={portfolioValue.symbol} />
