@@ -7,11 +7,13 @@ import { UserProvider } from "./Context/useAuth";
 function App() {
   return (
     <>
-      <UserProvider>
-        <Navbar />
-        <Outlet />
-        <ToastContainer />
-      </UserProvider>
+      <div className="min-h-screen bg-gray-300">
+        <UserProvider>
+          <Navbar />
+          <Outlet />
+          <ToastContainer />
+        </UserProvider>
+      </div>
     </>
   );
 }
