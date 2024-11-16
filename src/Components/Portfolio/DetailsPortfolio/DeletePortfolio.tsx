@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaInfoCircle } from "react-icons/fa"; // Importing Font Awesome icon
 
 interface Props {
   portfolioValue: string;
@@ -8,8 +9,8 @@ interface Props {
 const DetailsPortfolio = ({ portfolioValue }: Props) => {
   return (
     <Link to={`/company/${portfolioValue}/company-profile`}>
-      <button className="px-4 py-2 font-semibold text-white bg-green-500 border border-green-500 rounded-lg hover:bg-white hover:text-green-500 hover:border-green-500">
-        Details
+      <button className="px-4 py-2 font-semibold text-white bg-green-500 border border-green-500 rounded-lg hover:bg-white hover:text-green-500 hover:border-green-500 flex items-center justify-center">
+        <FaInfoCircle className="text-lg" /> {/* Added the icon */}
       </button>
     </Link>
   );
