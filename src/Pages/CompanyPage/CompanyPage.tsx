@@ -6,8 +6,6 @@ import Sidebar from "../../Components/Sidebar/Sidebar";
 import CompanyDashboard from "../../Components/CompanyDashboard/CompanyDashboard";
 import Tile from "../../Components/Tile/Tile";
 import Spinner from "../../Components/Spinners/Spinner";
-import CompFinder from "../../Components/CompFinder/CompFinder";
-import TenKFinder from "../../Components/TenKFinder/TenKFinder";
 
 interface Props {}
 
@@ -27,18 +25,13 @@ const CompanyPage = (props: Props) => {
   return (
     <>
       {company ? (
-        <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-hidden">
+        <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-hidden bg-red-500">
           <Sidebar />
           <CompanyDashboard ticker={ticker!}>
             <Tile title="Company Name" subTitle={company.companyName} />
             <Tile title="Price" subTitle={"$" + company.price.toString()} />
             <Tile title="DCF" subTitle={"$" + company.dcf.toString()} />
             <Tile title="Sector" subTitle={company.sector} />
-            <CompFinder ticker={company.symbol} />
-            <TenKFinder ticker={company.symbol} />
-            <p className="bg-white shadow rounded text-medium font-medium text-gray-900 p-3 mt-1 m-4">
-              {company.description}
-            </p>
           </CompanyDashboard>
         </div>
       ) : (
