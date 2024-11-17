@@ -15,9 +15,9 @@ const CardPortfolio = ({ portfolioValue, onPortfolioDelete }: Props) => {
         {portfolioValue.companyName}
       </div>
       <div className="flex flex-col sm:flex-row sm:space-x-4 sm:space-y-0 space-y-4">
-        <DetailsPortfolio portfolioValue={portfolioValue.companyName} />
+        <DetailsPortfolio portfolioValue={portfolioValue.symbol} />
         <DeletePortfolio
-          portfolioValue={portfolioValue.companyName}
+          portfolioValue={portfolioValue.symbol}
           onPortfolioDelete={onPortfolioDelete}
         />
       </div>
