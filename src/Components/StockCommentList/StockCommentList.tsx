@@ -8,13 +8,18 @@ type Props = {
 
 const StockCommentList = ({ comments }: Props) => {
   return (
-    <>
-      {comments
-        ? comments.map((comment) => {
-            return <StockCommentListItem comment={comment} />;
-          })
-        : ""}
-    </>
+    <div className=" m-4 bg-white rounded-lg pb-6">
+      {/* Section Title */}
+      <h1 className="text-xl font-bold text-gray-800 px-4 py-6">Comments</h1>
+      {/* Comments List */}
+      {comments && comments.length > 0 ? (
+        comments.map((comment) => (
+          <StockCommentListItem comment={comment} />
+        ))
+      ) : (
+        <p className="text-gray-500 text-center">No comments available.</p>
+      )}
+    </div>
   );
 };
 
