@@ -10,9 +10,6 @@ import {
   formatRatio,
 } from "../../Helpers/NumberFormatting";
 import StockComment from "../StockComment/StockComment";
-import Sidebar from "../Sidebar/Sidebar";
-import CompanyDashboard from "../CompanyDashboard/CompanyDashboard";
-import Tile from "../Tile/Tile";
 
 type Props = {};
 
@@ -106,7 +103,7 @@ const CompanyProfile = (props: Props) => {
   return (
     <>
     {company ? (
-            <p className="bg-white shadow rounded text-medium font-medium text-gray-900 p-3 mt-1 m-4">
+            <p className="bg-white rounded-lg text-medium font-medium text-gray-900 p-3 mt-1 m-4 text-justify">
               {company.description}
             </p>
       ) : (

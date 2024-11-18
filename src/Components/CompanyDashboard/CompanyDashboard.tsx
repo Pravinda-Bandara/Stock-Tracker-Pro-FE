@@ -9,11 +9,11 @@ interface Props {
 const CompanyDashboard = ({ children, ticker }: Props) => {
   return (
     <div className="relative md:ml-64 bg-blueGray-100 w-full">
-      <div className="relative pt-20 pb-32 bg-lightBlue-500">
-        <div className="px-4 md:px-6 mx-auto w-full">
+      <div className="relative pb-32 bg-lightBlue-500 flex justify-center">
+        <div className="w-full ">
           <div>
-            <div className="flex flex-wrap p-10">{children}</div>
-            <div className="flex flex-wrap">{<Outlet context={ticker} />}</div>
+            <div className="flex flex-wrap py-8">{children}</div>
+            <div className="flex flex-wrap w-full">{<Outlet context={ticker} />}</div>
           </div>
         </div>
       </div>
