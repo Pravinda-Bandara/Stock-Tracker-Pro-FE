@@ -22,10 +22,11 @@ const CompanyPage = (props: Props) => {
     getProfileInit();
   }, []);
 
+  console.log(company)
   return (
     <>
       {company ? (
-        <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-hidden bg-red-500">
+        <div className="w-full relative flex ct-docs-disable-sidebar-content overflow-x-hidden">
           <Sidebar />
           <CompanyDashboard ticker={ticker!}>
             <Tile title="Company Name" subTitle={company.companyName} />
