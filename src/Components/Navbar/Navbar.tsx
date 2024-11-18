@@ -14,11 +14,6 @@ const Navbar = (props: Props) => {
           <Link to="/">
             <img src={logo} alt="" />
           </Link>
-          <div className="hidden font-bold lg:flex">
-            <Link to="/search" className="text-black hover:text-darkBlue">
-            My Portfolio
-            </Link>
-          </div>
         </div>
         {isLoggedIn() ? (
           <div className="hidden lg:flex items-center space-x-6 text-back">
