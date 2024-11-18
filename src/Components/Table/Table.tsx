@@ -30,7 +30,7 @@ const Table = ({ config, data }: Props) => {
   });
 
   return (
-    <div className="bg-white shadow rounded-lg m-4 p-2 w-full flex justify-center item-center">
+    <div className="bg-white rounded-lg m-4 p-2 w-full flex justify-center item-center">
       <table className="w-full divide-y divide-gray-200">
         <thead className="bg-gray-200">
           <tr>{renderedHeaders}</tr>
