@@ -8,7 +8,7 @@ interface Props {}
 const Navbar = (props: Props) => {
   const { isLoggedIn, user, logout } = useAuth();
   return (
-    <nav className="relative container mx-auto p-6">
+    <nav className="p-6 bg-white w-full px-[35px]">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-20">
           <Link to="/">
@@ -25,7 +25,7 @@ const Navbar = (props: Props) => {
             <div className="hover:text-darkBlue">Welcome, {user?.userName}</div>
             <a
               onClick={logout}
-              className="px-8 py-3 font-bold rounded text-white bg-lightGreen hover:opacity-70"
+              className="px-8 py-3 font-bold rounded-lg text-white bg-green-500 hover:bg-white  hover:text-green-500 border border-green-500"
             >
               Logout
             </a>
@@ -37,7 +37,7 @@ const Navbar = (props: Props) => {
             </Link>
             <Link
               to="/register"
-              className="px-8 py-3 font-bold rounded text-white bg-lightGreen hover:opacity-70"
+              className="px-8 py-3 font-bold rounded-lg text-white bg-green-500 hover:bg-white  hover:bg-white hover:text-green-500 border-green-500"
             >
               Signup
             </Link>
