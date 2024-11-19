@@ -21,7 +21,7 @@ const Table = ({ config, data }: Props) => {
   const renderedHeaders = config.map((config: any) => {
     return (
       <th
-        className="p-4 text-center text-xs font-medium text-gray-500 uppercase tracking-wider"
+        className="p-4 text-center text-sm font-medium text-textGreen4 font-bold uppercase tracking-wider"
         key={config.label}
       >
         {config.label}
@@ -30,12 +30,12 @@ const Table = ({ config, data }: Props) => {
   });
 
   return (
-    <div className="bg-white rounded-lg m-4 p-2 w-full flex justify-center item-center">
-      <table className="w-full divide-y divide-gray-200">
-        <thead className="bg-gray-200">
-          <tr>{renderedHeaders}</tr>
+    <div className="bg-bgGray9 rounded-lg m-4 p-2 w-full flex justify-center item-center border-2 border-bgGray4">
+      <table className="w-full divide-y divide-bgGray9">
+        <thead className="text-green-400">
+          {renderedHeaders}
         </thead>
-        <tbody>{renderedRows}</tbody>
+        <tbody className="text-textGray4 text-sm">{renderedRows}</tbody>
       </table>
     </div>
   );
