@@ -8,8 +8,8 @@ type Props = {};
 
 const Sidebar = (props: Props) => {
   return (
-    <nav className="fixed md:block py-4 px-6 mt-16 top-8 bottom-0 w-56 bg-bgBlack left-0 transition-all duration-300 ease-in-out transform md:translate-x-0 -translate-x-full h-full">
-      <div className="flex-col min-h-full px-0 flex flex-wrap items-center justify-between w-full mx-auto overflow-y-auto">
+    <nav className="fixed md:block py-4 px-6 mt-16 top-0 bottom-0 w-56 bg-bgBlack left-0 transition-all duration-300 ease-in-out transform md:translate-x-0 -translate-x-full h-full">
+      <div className="flex-col min-h-full px-0 pt-7 flex flex-wrap items-center justify-between w-full mx-auto overflow-y-auto">
         <div className="flex bg-bgBlack flex-col items-stretch opacity-100 relative mt-4 h-auto z-40 items-center flex-1 rounded w-full">
           <div className="md:flex-col md:min-w-full flex flex-col list-none">
             <Link
