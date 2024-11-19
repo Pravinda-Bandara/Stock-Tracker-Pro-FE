@@ -14,14 +14,14 @@ const Search: React.FC<Props> = ({
 }: Props): JSX.Element => {
   return (
     <section className="flex justify-center py-8">
-      <div className="max-w-lg w-full px-4 ">
+      <div className="max-w-lg w-full px-4">
         <form onSubmit={onSearchSubmit} className="flex items-center">
           <input
             type="text"
             placeholder="Search companies..."
             value={search}
             onChange={handleSearchChange}
-            className="flex-1 p-3 border border-gray-300 rounded-l-lg focus:ring-2 focus:ring-blue-400 focus:outline-none bg-gray-100"
+            className="flex-1 p-3 border border-gray-300 rounded-l-lg bg-gray-100 focus:outline-none focus:border-green-500"
           />
           <button
             type="submit"

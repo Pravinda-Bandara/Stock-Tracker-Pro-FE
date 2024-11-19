@@ -30,8 +30,8 @@ const StockCommentForm = ({ symbol, handleComment }: Props) => {
     <h1 className="text-xl font-bold text-textGreen4 pb-6">Add a comments here ...</h1>
       <input
         type="text"
-        id="title"
-        className="mb-3 bg-bgGray4 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-3 placeholder-gray-400"
+        id="title" 
+        className="mb-3 bg-bgGray4 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-3 placeholder-gray-400 focus:outline-none"
         placeholder="Title"
         {...register("title")}
       />
@@ -41,7 +41,7 @@ const StockCommentForm = ({ symbol, handleComment }: Props) => {
         <textarea
           id="comment"
           rows={6}
-          className="bg-bgGray4 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-3 placeholder-gray-400"
+          className="bg-bgGray4 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-3 placeholder-gray-400 focus:outline-none"
           placeholder="Write a comment..."
           {...register("content")}
         ></textarea>
