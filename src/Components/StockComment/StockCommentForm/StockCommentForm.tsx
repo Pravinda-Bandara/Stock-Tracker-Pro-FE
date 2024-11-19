@@ -31,7 +31,7 @@ const StockCommentForm = ({ symbol, handleComment }: Props) => {
       <input
         type="text"
         id="title"
-        className="mb-3 bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 placeholder-gray-400"
+        className="mb-3 bg-bgGray4 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-3 placeholder-gray-400"
         placeholder="Title"
         {...register("title")}
       />
@@ -41,7 +41,7 @@ const StockCommentForm = ({ symbol, handleComment }: Props) => {
         <textarea
           id="comment"
           rows={6}
-          className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 placeholder-gray-400"
+          className="bg-bgGray4 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-3 placeholder-gray-400"
           placeholder="Write a comment..."
           {...register("content")}
         ></textarea>
@@ -50,7 +50,7 @@ const StockCommentForm = ({ symbol, handleComment }: Props) => {
       
       <button
         type="submit"
-        className="inline-flex items-center py-2 px-4 text-sm font-medium text-white bg-green-500 rounded-lg focus:ring-4 focus:ring-blue-300 hover:bg-green-600"
+        className="inline-flex items-center py-2 px-4 text-sm font-medium text-white bg-bgGreen5 rounded-lg focus:ring-4 focus:ring-green-300 hover:bg-green-600"
       >
         Post comment
       </button>

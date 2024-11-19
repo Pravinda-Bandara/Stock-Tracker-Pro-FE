@@ -8,7 +8,7 @@ type Props = {
 const StockCommentListItem = ({ comment }: Props) => {
   console.log(comment)
   return (
-    <div className="relative grid grid-cols-1 gap-4 border rounded-lg bg-bgGray6 mx-4 p-6 rounded-lg my-2">
+    <div className="relative grid grid-cols-1 gap-4 border rounded-lg bg-bgGray9 mx-4 p-6 rounded-lg my-2">
       <div className="relative flex gap-4 w-full">
         <div className="flex flex-col w-full">
           <div className="flex flex-row justify-between">
