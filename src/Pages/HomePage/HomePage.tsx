@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "../../Components/Hero/Hero";
+import Welcome from "../../Components/Welcome/Welcome";
 
 type Props = {};
 
 const HomePage = (props: Props) => {
   return (
     <>
-      <Hero />
+      <Welcome />
     </>
   );
 };
