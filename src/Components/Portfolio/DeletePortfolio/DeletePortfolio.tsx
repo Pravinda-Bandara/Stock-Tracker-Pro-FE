@@ -12,7 +12,7 @@ const DeletePortfolio = ({ onPortfolioDelete, portfolioValue }: Props) => {
       <form onSubmit={onPortfolioDelete}>
         <input hidden={true} value={portfolioValue} readOnly /> {/* Made input readonly */}
         <button
-          className="px-4 py-2 font-semibold text-white duration-200 border rounded-lg bg-red-500 hover:text-red-500 hover:bg-white border-red-500 flex items-center justify-center"
+          className="px-4 py-2 font-semibold text-white duration-200 border rounded-lg bg-red-600 hover:text-red-600 hover:bg-white border-red-600 flex items-center justify-center"
           aria-label="Delete Portfolio"
         >
           <FaTrash className="text-lg" /> {/* Trash icon */}

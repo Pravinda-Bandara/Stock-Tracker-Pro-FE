@@ -103,7 +103,7 @@ const CompanyProfile = (props: Props) => {
   return (
     <>
     {company ? (
-            <p className="bg-white rounded-lg text-medium font-medium text-gray-900 p-3 mt-1 m-4 text-justify">
+            <p className="rounded-lg text-medium font-medium text-textGray4 p-3 mt-1 m-4 text-justify">
               {company.description}
             </p>
       ) : (

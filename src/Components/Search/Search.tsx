@@ -25,7 +25,7 @@ const Search: React.FC<Props> = ({
           />
           <button
             type="submit"
-            className="px-5 py-3 bg-green-500 text-white font-semibold border border-green-500 rounded-r-lg hover:bg-green-600 hover:text-green-500 transition-colors"
+            className="px-5 py-3 bg-bgGreen5 text-white font-semibold border border-bgGreen5 rounded-r-lg hover:bg-green-600 hover:text-green-500 transition-colors"
           >
             <FaSearch className="text-white text-2xl" />
           </button>
