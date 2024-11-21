@@ -8,7 +8,7 @@
 ## Introduction  
 
 Welcome to our Stock Portfolio Management System! This platform allows users to log in and manage their stock investments interactively. Users can add stocks to their portfolio, view detailed stock information, and post comments to discuss investments. The platform leverages the **Financial Modeling Prep API** for real-time stock data, providing an engaging and informative experience for users.  
-Our backend, powered by **.NET with Entity Framework (EF)** and **MS SQL**, efficiently handles HTTP requests, user authentication using JWT (JSON Web Tokens), and database interactions.
+Our frontend powered by **React**,**TaiwindCSS**,vTypescript** and  backend, powered by **.NET with Entity Framework (EF)** and **MS SQL**, efficiently handles HTTP requests, user authentication using JWT (JSON Web Tokens), and database interactions.
 
 ## Features  
 
@@ -18,10 +18,6 @@ Our backend, powered by **.NET with Entity Framework (EF)** and **MS SQL**, effi
 - **Detailed Stock Information:** View real-time stock details using the Financial Modeling Prep API.  
 - **Commenting System:** Post and view comments on specific stocks.  
 
-### Admin Features  
-- **User Management:** Admins can view and manage users.  
-- **Portfolio Oversight:** Access and manage user portfolios.  
-- **Comment Moderation:** Delete inappropriate comments.  
 
 ## Preview  
 
