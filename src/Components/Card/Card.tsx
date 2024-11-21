@@ -23,13 +23,13 @@ const Card: React.FC<Props> = ({
       <div className="flex flex-col md:flex-row items-start md:items-center w-full md:w-auto space-y-2 md:space-y-0 md:space-x-4">
         <Link
           to={`/company/${searchResult.symbol}/company-profile`}
-          className="font-bold text-center md:text-left text-veryDarkViolet text-textGray4"
+          className="font-bold text-center md:text-left text-veryDarkViolet text-black"
         >
           {searchResult.name} ({searchResult.symbol})
         </Link>
         <div className="flex flex-col md:flex-row items-start md:items-center space-y-1 md:space-x-2 md:space-y-0">
-          <p className="text-textGray4 text-sm">Currency:</p>
-          <p className="text-textGray4 text-sm font-medium">{searchResult.currency}</p>
+          <p className="text-gray-600 text-sm">Currency:</p>
+          <p className="text-gray-600 text-sm font-medium">{searchResult.currency}</p>
         </div>
       </div>
 
