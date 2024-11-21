@@ -25,22 +25,19 @@ Our backend, powered by **.NET with Entity Framework (EF)** and **MS SQL**, effi
 
 ## Preview  
 
-### User Routes  
 <div>
-  <img src="./screenshots/user1.png" alt="User Screenshot 1" >
-  <img src="./screenshots/user2.png" alt="User Screenshot 2" >
+  <img src="./screenshots/1.png" alt="User Screenshot 1" >
+  <img src="./screenshots/2.png" alt="User Screenshot 2" >
 </div>
 
-### Portfolio Management  
 <div>
-  <img src="./screenshots/portfolio1.png" alt="Portfolio Screenshot 1" >
-  <img src="./screenshots/portfolio2.png" alt="Portfolio Screenshot 2" >
+  <img src="./screenshots/3.png" alt="Portfolio Screenshot 1" >
+  <img src="./screenshots/4.png" alt="Portfolio Screenshot 2" >
 </div>
 
-### Admin Routes  
 <div>
-  <img src="./screenshots/admin1.png" alt="Admin Screenshot 1" >
-  <img src="./screenshots/admin2.png" alt="Admin Screenshot 2" >
+  <img src="./screenshots/5.png" alt="Admin Screenshot 1" >
+  <img src="./screenshots/6.png" alt="Admin Screenshot 2" >
 </div>
 
 ## Frontend Technologies Used  
