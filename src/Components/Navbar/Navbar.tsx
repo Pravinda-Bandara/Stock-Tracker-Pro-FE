@@ -10,12 +10,12 @@ const Navbar = (props: Props) => {
   return (
     <>
       {/* Fixed Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-bgBlack shadow-md px-6 lg:px-[35px]">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-bgBlack shadow-md px-6 lg:px-[25px]">
         <div className="flex items-center justify-between py-4">
           {/* Logo Section */}
           <div className="flex items-center space-x-20">
             <Link to="/">
-              <img src={logo} alt="Logo" className="h-10 w-auto" />
+              <img src={logo} alt="Logo" className="h-9 w-auto" />
             </Link>
           </div>
 

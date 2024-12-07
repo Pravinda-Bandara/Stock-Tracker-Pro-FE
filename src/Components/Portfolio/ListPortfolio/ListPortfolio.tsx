@@ -11,11 +11,11 @@ interface Props {
 
 const ListPortfolio = ({ portfolioValues, onPortfolioDelete, isLoading }: Props) => {
   return (
-    <section id="portfolio">
+    <section id="portfolio" className="py-9">
       <h3 className="my-8 mt-3 text-xl font-semibold text-center md:text-2xl text-textGray4">
         My Portfolio
       </h3>
-      <div className="relative flex flex-col items-center max-w-5xl mx-auto px-10 mb-5 md:px-6">
+      <div className="relative flex flex-col items-center max-w-5xl mx-auto px-10 mb-5 md:px-6 py-[22px]">
         {isLoading ? (
           <div className="flex justify-center items-center w-full h-64">
             <Spinner isLoading={isLoading} />

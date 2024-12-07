@@ -7,7 +7,10 @@ type Props = {
 
 const Spinner = ({ isLoading = true }: Props) => {
   return (
-    <div id="loading-spinner">
+    <div
+      id="loading-spinner"
+      className="flex items-center justify-center h-screen w-screen"
+    >
       <ClipLoader
         color="#36d7b7"
         loading={isLoading}
