@@ -10,7 +10,7 @@ const StockCommentList = ({ comments }: Props) => {
   return (
     <div className=" m-4 bg-bgGray9 rounded-lg pb-6">
       {/* Section Title */}
-      <h1 className="text-xl font-bold text-textGreen4 px-4 pt-6 pb-4">Comments</h1>
+      <h1 className="text-xl font-bold text-textGreen4 px-4 pt-6 pb-4 ml-2">Comments</h1>
       {/* Comments List */}
       {comments && comments.length > 0 ? (
         comments.map((comment) => (
