@@ -26,15 +26,17 @@ export const UserProvider = ({ children }: Props) => {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    const user = localStorage.getItem("user");
-    const token = localStorage.getItem("token");
-    if (user && token) {
-      setUser(JSON.parse(user));
-      setToken(token);
-      axios.defaults.headers.common["Authorization"] = "Bearer " + token;
+    const userFromStorage = localStorage.getItem("user");
+    const tokenFromStorage = localStorage.getItem("token");
+  
+    if (userFromStorage && tokenFromStorage) {
+      setUser(JSON.parse(userFromStorage));
+      setToken(tokenFromStorage);
+      axios.defaults.headers.common["Authorization"] = "Bearer " + tokenFromStorage;
     }
     setIsReady(true);
-  }, []);
+  }, [setUser, setToken, setIsReady,user,token]);
+  
 
   const registerUser = async (
     email: string,
@@ -62,21 +64,20 @@ export const UserProvider = ({ children }: Props) => {
   const loginUser = async (username: string, password: string) => {
     await loginAPI(username, password)
       .then((res) => {
-        if (res) {
-          localStorage.setItem("token", res?.data.token);
-          const userObj = {
-            userName: res?.data.userName,
-            email: res?.data.email,
-          };
+        if (res && res.data.token) {
+          localStorage.setItem("token", res.data.token); // Update token
+          setToken(res.data.token);
+          // Set user details
+          const userObj = { userName: res.data.userName, email: res.data.email };
           localStorage.setItem("user", JSON.stringify(userObj));
-          setToken(res?.data.token!);
-          setUser(userObj!);
+          setUser(userObj);
           toast.success("Login Success!");
           navigate("/search");
         }
       })
-      .catch((e) => toast.warning("Server error occured"));
+      .catch(() => toast.warning("Server error occurred"));
   };
+  
 
   const isLoggedIn = () => {
     return !!user;
