@@ -3,8 +3,13 @@ import Navbar from "./Components/Navbar/Navbar";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import { UserProvider } from "./Context/useAuth";
+import { useEffect } from "react";
+import setupAxiosInterceptor from "./Services/AxiosInterceptor";
 
 function App() {
+  useEffect(() => {
+    setupAxiosInterceptor();
+  }, []);
   return (
     <>
       <div className="min-h-screen bg-bgGray9">
