@@ -83,7 +83,14 @@ export const UserProvider = ({ children }: Props) => {
     navigate("/");
   };
 
-  const isLoggedIn = () => !!user;
+  const isLoggedIn = (): boolean => {
+    const tokenFromStorage = localStorage.getItem("token");
+    const userFromStorage = localStorage.getItem("user");
+  
+    // Assuming token validation can be done here
+    return !!tokenFromStorage && !!userFromStorage;
+  };
+  
 
   return (
     <UserContext.Provider

@@ -24,8 +24,8 @@ const setupAxiosInterceptor = () => {
         localStorage.removeItem("token");
         localStorage.removeItem("user");
         toast.error("Session expired. Please log in again.");
-        const navigate = useNavigate();
-        navigate("/");
+        window.location.href = '/login';
+        
       }
       return Promise.reject(error);
     }
